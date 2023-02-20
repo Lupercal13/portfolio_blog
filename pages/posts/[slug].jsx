@@ -80,7 +80,7 @@ export default function BlogPost({ post }) {
         {post.title}
       </h2>
       <div className={styles.title}>
-        <img src={post.author.avatar.url} alt="" />
+        {/* <img src={post.author.avatar.url} alt="" /> */}
         <div className={styles.authtext}>
           <h6>By {post.author.name} ||</h6>
           <h6 className={styles.date}>{post.datePublished}</h6>

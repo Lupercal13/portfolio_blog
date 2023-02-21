@@ -1,14 +1,13 @@
 import Link from "next/link";
-import styles from "../styles/BlogCard.module.css";
 function BlogCard({ title, author, coverPhoto, datePublished, slug }) {
   return (
-    <div className="grid grid-cols-1">
-        <div className="justify-center shadow-xl mt-4  mx-8 rounded-xl border-black/30 border-2 h-full ">
+    <div className="grid grid-cols-1 ">
+        <div className="justify-center shadow-xl mt-4  mx-8 rounded-xl border-black/30 border-2 h-full bg-gray-200">
           <div className="pt-2 ">
             <img
               src={coverPhoto.url}
               alt={title}
-              className=" object-cover h-[300px] w-full px-4 py-4"
+              className=" object-cover h-[300px] w-[95%] my-4 rounded-xl mx-auto"
             />
           </div>
           <div className="flex flex-col items-center -mt-2 border-b px-3 ">

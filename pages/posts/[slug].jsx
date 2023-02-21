@@ -73,12 +73,15 @@ export default function BlogPost({ post }) {
     //     <div dangerouslySetInnerHTML={{__html: post.content.html}}></div>
 
     // </main>
-    <div className="border-2 border-black rounded-xl m-2">
+    <div className="border-2 border-black rounded-xl my-8 mx-4 py-8 h-full lg:mx-[8rem]">
 
     <main className={styles.blog}>
-      <h2 className="text-3xl mt-4 text-center md:text-left w-full border-b-2 border-gray-400 pb-2 mb-0">
+        <div className=" border-b-2 border-gray-400 pb-2 mb-0">
+
+      <h2 className="text-5xl mt-4 pb-1 md:text-left w-full">
         {post.title}
       </h2>
+        </div>
       <div className={styles.title}>
         {/* <img src={post.author.avatar.url} alt="" /> */}
         <div className={styles.authtext}>
@@ -86,8 +89,8 @@ export default function BlogPost({ post }) {
           <h6 className={styles.date}>{post.datePublished}</h6>
         </div>
       </div>
-      <div className="pb-2 border-b border-black">
-        <img src={post.coverPhoto.url} className='w-full md:h-[500px] mt-4 rounded-3xl object-cover' alt="" />
+      <div className="pb-2 mb-4 border-b border-black">
+        <img src={post.coverPhoto.url} className='w-full  md:h-[300px] md:w-[80%] md:mx-auto  mt-4 rounded-3xl object-cover' alt="" />
       </div>
       <div
         className={styles.content}

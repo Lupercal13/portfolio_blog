@@ -17,7 +17,7 @@ function Nav() {
         <Link href="/" className="">
           Home
         </Link>
-        <Link href="/">Contact</Link>
+        <Link href="/About">About</Link>
       </div>
       {/* Hamburget Menu */}
       <div onClick={handleNav} className="block z-10 cursor-pointer sm:hidden mr-4">

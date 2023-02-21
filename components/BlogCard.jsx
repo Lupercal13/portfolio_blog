@@ -1,5 +1,6 @@
 import Link from "next/link";
-function BlogCard({ title, author, coverPhoto, datePublished, slug }) {
+
+function BlogCard({ title, author, coverPhoto, datePublished, slug, description }) {
   return (
     <div className="grid grid-cols-1 ">
         <div className="justify-center shadow-xl mt-4  mx-8 rounded-xl border-black/30 border-2 h-full bg-gray-200">
@@ -10,14 +11,16 @@ function BlogCard({ title, author, coverPhoto, datePublished, slug }) {
               className=" object-cover h-[300px] w-[95%] my-4 rounded-xl mx-auto"
             />
           </div>
-          <div className="flex flex-col items-center -mt-2 border-b px-3 ">
-            <h2 className="text-lg md:text-xl ">{title}</h2>
+          <div className="flex flex-col  -mt-2 border-b px-8">
+            <h2 className="text-lg md:text-2xl font-semibold text-center text-gray-900 ">{title}</h2>
+            <p className="py-4 text-sm tracking-wide sm:text-base">{description}</p>
           </div>
-          <div className="ml-8 flex items-end gap-4 mb-2 pt-2 w-full">
-            <img src={author.avatar.url} alt={author.name} className="w-[8%]" />
+          <div className="ml-8 flex items-end gap-2 mb-2 pt-2 w-full">
+            <img src={author.avatar.url} alt={author.name} className="w-[7%]" />
             <div className="">
-              <h3 className="font-semibold">{author.name}</h3>
-              <h3 className="text-xs">{datePublished}</h3>
+                <Link href='/About'>
+              <h3 className="font-semibold text-gray-600 hover:text-gray-800">{author.name}</h3></Link>
+              <h3 className="text-xs text-gray-600">{datePublished}</h3>
             </div>
           </div>
       <Link href={"/posts/" + slug}>

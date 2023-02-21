@@ -27,7 +27,7 @@ function Nav() {
         className={
           nav
             ? "md:hidden fixed top-0 left-0 w-full h-screen bg-black/60 flex justify-center items-center ease-in duration-300"
-            : "md:hidden fixed top-[-100%] left-0 w-full h-screen bg-black/60 flex justify-center items-center ease-in duration-300"
+            : "md:hidden fixed top-[-100%] left-0 w-full h-screen bg-transparent flex justify-center items-center ease-in duration-300"
         }
       >
         <ul className="flex flex-col justify-center items-center gap-8">

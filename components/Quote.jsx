@@ -27,15 +27,15 @@ function Quote() {
 
   return (
     <div className="w-full text-center mx-auto my-8  pb-4">
-      <div className="w-[80%] mx-auto flex flex-col gap-4 py-8  ">
+      <div className="w-[80%] lg:w-[50%]  flex flex-col justify-center items-center mx-auto gap-4 py-8  ">
         {/* <div>
           <FaQuoteLeft size={30}className='fill-gray-500' />
         </div> */}
-        <div className=" font-bold text-lg ">
-          <p className="text-gray-600 flex gap-4"><FaQuoteLeft className="fill-gray-400" /> {quote} <FaQuoteRight className="fill-gray-400"/> </p>
+        <div className=" font-bold text-lg lg:text-xl ">
+          <p className="text-gray-600 flex gap-4"><FaQuoteLeft className="fill-purple-400" /> {quote} <FaQuoteRight className="fill-purple-400"/> </p>
         </div>
       </div>
-      <div className="flex justify-end w-[90%] font-semibold gap-2 items-center">
+      <div className="flex justify-end w-[90%] lg:w-[70%] font-semibold gap-2 items-center">
         <p className="text-gray-500"> - {author}</p>
       <div className="">
         <button onClick={fetchData} className=''>

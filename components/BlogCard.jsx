@@ -25,9 +25,9 @@ function BlogCard({ title, author, coverPhoto, datePublished, slug, description 
             </div>
           </div>
       <Link href={"/posts/" + slug}>
-            <div className="w-full flex flex-col px-8 mb-4">
+            <div className="w-full flex sm:justify-center px-8 mb-4 ">
 
-            <button className="border-4 border-black p-2 mt-6 bg-blue-200 font-semibold tracking-wider hover:scale-[100.5%] hover:bg-blue-100">Read Now</button>
+            <button className=" w-full sm:w-[60%] border-4 border-black rounded-2xl py-1 mt-6 bg-purple-500 text-black text-xl font-semibold tracking-wider hover:scale-[100.5%] hover:bg-purple-500/95">Read Now</button>
             </div>
       </Link>
         </div>

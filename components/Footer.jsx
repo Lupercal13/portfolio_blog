@@ -6,7 +6,7 @@ function Footer() {
   const date = new Date().getFullYear();
   return (
     <div className="">
-      <footer className="mt-12 px-4 max-h-[60px] flex items-center justify-between bg-gray-400/30 ">
+      <footer className="mt-12 px-4 max-h-[60px] flex items-center justify-between bg-gray-600/30 ">
         <div>
           <p className="text-lg">PayneDevHaus_Blog</p>
           <p className="text-xs">&copy; PayneDevHaus {date}</p>

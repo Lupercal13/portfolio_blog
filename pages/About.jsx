@@ -40,7 +40,7 @@ function About() {
                 This blog is mean to serve as a platform where I can share with
                 others the things that I have learned or have found interesting
                 while on my journey. My focus is on <span className="font-semibold">CSS</span>, <span className="font-semibold">JavaScript</span>, and 
-                 <span className=" font-semibold"> React</span>. However, I won't be limiting the items this blog to just
+                 <span className=" font-semibold"> React</span>. However, I won&apos;t be limiting the items this blog to just
                 those three topics.
               </p>
               <p className="pb-2">
@@ -50,7 +50,7 @@ function About() {
                 </a>
                 . If you are interested in my other works and projects then
                 please have a look at
-                <a href="/">
+                <a href="#">
                   <span className="hover:border-b border-black font-medium"> my portfolio website</span>
                 </a>
                 .

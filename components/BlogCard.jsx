@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 function BlogCard({ title, author, coverPhoto, datePublished, slug, description }) {
   return (
@@ -16,7 +17,7 @@ function BlogCard({ title, author, coverPhoto, datePublished, slug, description 
             <p className="py-4 text-sm tracking-wide sm:text-base">{description}</p>
           </div>
           <div className="ml-8 flex items-end gap-2 mb-2 pt-2 w-full">
-            <img src={author.avatar.url} alt={author.name} className="w-[7%]" />
+            <img src={author.avatar.url} alt={author.name}  className="w-[7%]" />
             <div className="">
                 <Link href='/About'>
               <h3 className="font-semibold text-gray-600 hover:text-gray-800">{author.name}</h3></Link>

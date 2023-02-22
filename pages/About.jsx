@@ -13,7 +13,7 @@ function About() {
         <link rel="icon" href="/avatar-favicon.ico" />
       </Head>
       <div className="mt-8">
-        <div className="h-screen">
+        <div className="h-full">
           <div className="flex justify-center w-full items-center">
             <Image src={avatar} />
           </div>

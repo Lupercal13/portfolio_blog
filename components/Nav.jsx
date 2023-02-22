@@ -34,8 +34,8 @@ function Nav() {
           <Link href="/">
             <li onClick={() => setNav(false)} className='text-gray-100 text-4xl hover:scale-[101%]'>Home</li>
           </Link>
-          <Link href="/">
-            <li onClick={() => setNav(false)} className='text-gray-100 text-4xl hover:scale-[101%]'>Contact</li>
+          <Link href="/About">
+            <li onClick={() => setNav(false)} className='text-gray-100 text-4xl hover:scale-[101%]'>About</li>
           </Link>
         </ul>
       </div>

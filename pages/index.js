@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import { GraphQLClient, gql } from "graphql-request";
 import BlogCard from "@/components/BlogCard";
+import Quote from "@/components/Quote";
 
 const graphcms = new GraphQLClient(
   "https://api-ap-northeast-1.hygraph.com/v2/cle73oo220e3i01t6dfr58rbz/master"
@@ -50,11 +51,12 @@ export default function Home({ posts }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/avatar-favicon.ico" />
       </Head>
-      <div className="w-[90%] mx-auto mt-2">
+      <Quote />
+      {/* <div className="w-[90%] mx-auto mt-2">
         <h1 className="text-3xl text-center my-8 font-mono mx-2">
           Life is a Journey.
         </h1>
-      </div>
+      </div> */}
 
       <main className={styles.main}>
         {posts

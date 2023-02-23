@@ -73,7 +73,7 @@ export default function BlogPost({ post }) {
     //     <div dangerouslySetInnerHTML={{__html: post.content.html}}></div>
 
     // </main>
-    <div className="border-2 border-black rounded-xl my-8 mx-4 py-8 h-full lg:mx-[8rem]">
+    <div className="border-2 border-black rounded-xl my-8 mx-4 py-8 h-full lg:mx-[8rem] bg-white">
 
     <main className={styles.blog}>
         <div className=" border-b-2 border-gray-400 pb-2 mb-0">

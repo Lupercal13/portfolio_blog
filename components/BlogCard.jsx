@@ -3,8 +3,10 @@ import Image from "next/image";
 
 function BlogCard({ title, author, coverPhoto, datePublished, slug, description }) {
   return (
-    <div className="grid grid-cols-1 ">
-        <div className="justify-center shadow-xl mt-4 mx-4 rounded-xl border-black/30 border-2 h-full bg-gray-200">
+
+
+    <div className="grid grid-cols-1  ">
+        <div className=" shadow-xl mt-4  rounded-xl border-black/30 border-2 h-full bg-gray-200">
           <div className="pt-2 ">
             <img
               src={coverPhoto.url}

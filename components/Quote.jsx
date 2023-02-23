@@ -26,7 +26,7 @@ function Quote() {
   }, []);
 
   return (
-    <div className="w-full text-center mx-auto my-8  pb-4">
+    <div className="w-[90%] text-center mx-auto my-8 pb-4 bg-white/20 rounded-lg shadow-md ">
       <div className="w-[80%] lg:w-[50%]  flex flex-col justify-center items-center mx-auto gap-4 py-8  ">
         {/* <div>
           <FaQuoteLeft size={30}className='fill-gray-500' />

@@ -4,7 +4,7 @@ import Image from "next/image";
 function BlogCard({ title, author, coverPhoto, datePublished, slug, description }) {
   return (
     <div className="grid grid-cols-1 ">
-        <div className="justify-center shadow-xl mt-4  mx-8 rounded-xl border-black/30 border-2 h-full bg-gray-200">
+        <div className="justify-center shadow-xl mt-4 mx-4 rounded-xl border-black/30 border-2 h-full bg-gray-200">
           <div className="pt-2 ">
             <img
               src={coverPhoto.url}
@@ -27,7 +27,7 @@ function BlogCard({ title, author, coverPhoto, datePublished, slug, description 
       <Link href={"/posts/" + slug}>
             <div className="w-full flex sm:justify-center px-8 mb-4 ">
 
-            <button className=" w-full sm:w-[60%] border-4 border-black rounded-2xl py-1 mt-6 bg-purple-500 text-black text-xl font-semibold tracking-wider hover:scale-[100.5%] hover:bg-purple-500/95">Read Now</button>
+            <button className=" w-full sm:w-[60%] border-4 border-black rounded-2xl py-1 mt-6 bg-purple-400 text-black text-xl font-semibold tracking-wider hover:scale-[100.5%] hover:bg-purple-400/90 shadow-lg">Read Now</button>
             </div>
       </Link>
         </div>

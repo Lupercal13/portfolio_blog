@@ -125,7 +125,7 @@
   .blog code {
     font-size: small;
     width: auto;
-    overflow: scroll;
+    overflow: auto;
     
   }
 }

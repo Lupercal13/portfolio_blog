@@ -114,7 +114,18 @@
   .content {
     width: 100%;
   }
+  .content p {
+    font-size: medium;
+    letter-spacing: .05rem;
+    line-height: 1.55rem;
+  }
   .content img {
     width: 100%;
+  }
+  .blog code {
+    font-size: small;
+    width: auto;
+    overflow: scroll;
+    
   }
 }

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-function BlogCard({ title, author, coverPhoto, datePublished, slug, description }) {
+function BlogCard({ title, author, coverPhoto, datePublished, slug, description,  }) {
   return (
 
 
@@ -26,6 +26,8 @@ function BlogCard({ title, author, coverPhoto, datePublished, slug, description 
               <h3 className="text-xs text-gray-600">{datePublished}</h3>
             </div>
           </div>
+
+
       <Link href={"/posts/" + slug}>
             <div className="w-full flex sm:justify-center px-8 mb-4 ">
 

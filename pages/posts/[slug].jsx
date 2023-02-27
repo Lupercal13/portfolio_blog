@@ -78,7 +78,7 @@ export default function BlogPost({ post }) {
     <main className={styles.blog}>
         <div className=" border-b-2 border-gray-400 pb-2 mb-0">
 
-      <h2 className="text-5xl mt-4 pb-1 md:text-left w-full">
+      <h2 className="text-2xl sm:text-5xl mt-4 pb-1 md:text-left w-full">
         {post.title}
       </h2>
         </div>

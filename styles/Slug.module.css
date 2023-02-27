@@ -55,14 +55,16 @@
 } */
 
 .blog code {
-  font-size: 1.025rem;
+  font-size: .85rem;
   background: rgb(55, 55, 55);
   color: rgb(246, 246, 246);
   display: block;
   padding: 1rem;
   margin: 2rem 0rem;
-  border-radius: 1rem;
+  border-radius: .5rem;
   width: 80%;
+  overflow: auto;
+  font-family: "JetBrains Mono", monospace;
 }
 
 .blog {

@@ -36,10 +36,10 @@ function Quote() {
         </div>
       </div>
       <div className="flex justify-end w-[90%] lg:w-[70%] font-semibold gap-2 items-center">
-        <p className="text-gray-500"> - {author}</p>
+        <p className="text-gray-500 italic"> - {author}</p>
       <div className="">
         <button onClick={fetchData} className=''>
-          <AiOutlineRedo className="hover:scale-105 fill-gray-400" />
+          <AiOutlineRedo className="hover:scale-105 fill-gray-400 hover:fill-gray-700" />
         </button>
       </div>
       </div>

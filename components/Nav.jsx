@@ -10,14 +10,14 @@ function Nav() {
   };
   return (
     <nav className="h-12 flex justify-between items-center border-b-2 border-black z-10 ">
-      <Link href="/" className=" text-lg sm:text-2xl font-mono ml-4 ">
+      <Link href="/" className=" text-lg sm:text-3xl font-mono ml-4 ">
         PayneDevHaus_Blog
       </Link>
-      <div className="hidden sm:flex gap-8 mr-8 justify-center items-center">
-        <Link href="/" className="">
+      <div className="hidden sm:flex gap-8 mr-8 justify-center items-center text-lg">
+        <Link href="/" className="hover:font-semibold">
           Home
         </Link>
-        <Link href="/About">About</Link>
+        <Link href="/About" className="hover:font-semibold">About</Link>
       </div>
       {/* Hamburget Menu */}
       <div onClick={handleNav} className="block z-10 cursor-pointer sm:hidden mr-4">
@@ -30,7 +30,7 @@ function Nav() {
             : "md:hidden fixed top-[-100%] left-0 w-full h-screen bg-transparent flex justify-center items-center ease-in duration-300"
         }
       >
-        <ul className="flex flex-col justify-center items-center gap-8">
+        <ul className="flex flex-col justify-center items-center gap-8 ">
           <Link href="/">
             <li onClick={() => setNav(false)} className='text-gray-100 text-4xl hover:scale-[101%]'>Home</li>
           </Link>
